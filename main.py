@@ -8,8 +8,8 @@ import argparse
 
 def main(usr, pw):
     client = requests.Session()
-    login_url = "https://w1.v2free.net/auth/login"
-    sign_url = "https://w1.v2free.net/user/checkin"
+    login_url = "https://wmsxwd-e.men/auth/login"
+    sign_url = "https://wmsxwd-e.men/user/checkin"
     data = {
         "email": usr,
         "passwd": pw,
@@ -18,13 +18,13 @@ def main(usr, pw):
 
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:74.0) Gecko/20100101 Firefox/76.0",
-        "Referer": "https://w1.v2free.net/auth/login",
+        "Referer": "https://wmsxwd-e.men/auth/login",
     }
     client.post(login_url, data=data, headers=headers)
 
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:74.0) Gecko/20100101 Firefox/76.0",
-        "Referer": "https://w1.v2free.net/user",
+        "Referer": "https://wmsxwd-e.men/user",
     }
     response = client.post(sign_url, headers=headers).json()
     print(response)
