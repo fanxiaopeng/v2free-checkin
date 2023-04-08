@@ -37,9 +37,9 @@ jobs:
         
     - name: Checkin
       run: |
-        user='${{ secrets.USER }}'
-        pwd='${{ secrets.PWD }}'
-        echo "$secrets"
+        user='${{ vars.USER }}'
+        pwd='${{ vars.PWD }}'
+        echo "$vars"
         echo "-----start-------"
         echo "$user"
         echo "$pwd"
