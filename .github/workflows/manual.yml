@@ -37,8 +37,8 @@ jobs:
         
     - name: Checkin
       run: |
-        user=${secrets.USER}
-        pwd=${secrets.PWD}
+        user="fanxiaopeng515@163.com"
+        pwd="123zxc123"
         echo "$vars"
         echo "-----start-------"
         echo "$user"
