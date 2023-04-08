@@ -22,7 +22,7 @@ permissions:
 jobs:
   check-in:
     runs-on: ubuntu-latest
-
+    environment: myenvironment
     steps:
     - uses: actions/checkout@v3
 
